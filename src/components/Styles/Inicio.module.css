@@ -1,0 +1,19 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 50px;
+}
+
+.image {
+ position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 100%;
+  width: auto;
+  filter: drop-shadow(0 0 20px red);
+}
+
+.content {
+  max-width: 600px;
+  margin-top: 150px;
+}

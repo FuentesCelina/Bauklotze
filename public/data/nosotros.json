@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0",
+        "name": "Carol",
+        "email": "carol@gmail.com",
+        "position":"Product Owner",
+        "image":"/images/carol.png"
+    },
+    {
+        "id": "1",
+        "name": "Luca",
+        "email": "luca@gmail.com",
+        "position":"Developer",
+        "image":"/images/luca.png"
+    },
+    {
+        "id": "2",
+        "name": "Franco",
+        "email": "fran@gmail.com",
+        "position":"Developer",
+        "image":"/images/franco.png"
+    }
+]
