@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCart } from '../../context/CartContext';
+import { useCart } from '../context/CartContext';
 
 const Carrito = () => {
   const { cart, clearCart, getCartTotal } = useCart();
@@ -14,7 +14,7 @@ const Carrito = () => {
   return(
    <>
      <h1>Tu Carrito</h1>
-      {carrito.map((producto) => (
+      {cart.map((producto) => (
       <div className="product-card" key={producto.id}>
       <img src={producto.image} alt={producto.name} className="picture-card"/>
       <h2 className="name-card">{producto.name}</h2>

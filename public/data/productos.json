@@ -2,79 +2,79 @@
     {
       "id": "1",
       "name": "Mouse",
-      "price": "$25",
+      "price": 25,
       "image": "https://tse2.mm.bing.net/th/id/OIP.o2ROtTohrQtXm5AyC396dQHaHx?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "2",
       "name": "Teclado",
-      "price": "$80",
+      "price": 80,
       "image": "https://m.media-amazon.com/images/I/61ts+5DlCQL._AC_SL1500_.jpg"
     },
     {
       "id": "3",
       "name":"Mousepad",
-      "price":"$899990",
+      "price":899990,
       "image":"https://tse1.mm.bing.net/th/id/OIP.V-9LK_iZhJa4A_2ve-sTbgHaFC?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "4",
       "name":"Teclado RGB",
-      "price":"$459990",
+      "price":459990,
       "image":"https://tse4.mm.bing.net/th/id/OIP.PiBsEav-54Y2H61uCVJ_ggHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "5",
       "name":"Auriculares Gamer",
-      "price":"$799990",
+      "price":799990,
       "image":"https://tse2.mm.bing.net/th/id/OIP.mnnzmkG5YGAKMJzNzG7g-wHaHK?w=500&h=484&rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "6",
       "name":"Mouse RGB",
-      "price":"$259990",
+      "price":259990,
       "image":"https://tse1.mm.bing.net/th/id/OIP.HpYJXuDxBE7tvrTm21tM6gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "7",
       "name":"Monitor Gamer",
-      "price":"$1299990",
+      "price":1299990,
       "image":"https://www.bigtechwire.com/wp-content/uploads/2022/08/LG-UltraGear-OLED-gaming-monitor-model-45GR95QE-2048x1487.jpg"
     },
     {
       "id": "8",
       "name":"Silla Gamer",
-      "price":"$999990",
+      "price":999990,
       "image":"https://i5.walmartimages.com.mx/mg/gm/3pp/asr/2b520174-e686-4334-9c67-b97e30190bb6.b297b504df3b15d3a4f26e3cc8bbe475.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff"
     },
     {
       "id": "9",
       "name":"Webcam HD",
-      "price":"$349990",
+      "price":349990,
       "image":"https://cdn.shopify.com/s/files/1/0081/8207/1377/products/N980P.jpg?v=1616089006"
     },
     {
       "id": "10",
       "name":"Notebook Gamer",
-      "price":"$2599990",
+      "price":2599990,
       "image":"https://www.bitmag.com.br/wp-content/uploads/2024/03/ASUS-ROG-Zephyrus-G16.jpg"
     },
     {
       "id": "11",
       "name":"Parlante RGB",
-      "price":"$189990",
+      "price":189990,
       "image":"https://tse3.mm.bing.net/th/id/OIP.7uQ-aQeN6TLcrWl2ali8rwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
     {
       "id": "12",
       "name":"Joystick Pro",
-      "price":"$559990",
+      "price":559990,
       "image":"https://gmedia.playstation.com/is/image/SIEPDC/dualsense-thumbnail-ps5-01-en-17jul20?$native$"
     },
     {
       "id": "13",
       "name":"Micrófono USB",
-      "price":"$429990",
+      "price":429990,
       "image":"https://m.media-amazon.com/images/I/71yqCCJWOmL._AC_SL1500_.jpg"
     }
 ]

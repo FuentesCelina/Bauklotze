@@ -2,7 +2,7 @@ import ProductCard from "../items/ProductCard";
 import styles from "../Styles/Products.module.css"
 import { useEffect,useState } from "react";
 
-function Productos({agregarAlCarrito}) {
+function Productos() {
   const [productos, setProductos] = useState([]);
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState(null);
@@ -30,7 +30,6 @@ function Productos({agregarAlCarrito}) {
         <ProductCard
           key={producto.id}
           producto={producto}
-          agregarAlCarrito={agregarAlCarrito}
         />
       ))}
     </div>
