@@ -7,7 +7,7 @@ import Contacto from "./components/pages/Contacto";
 import { Routes, Route } from "react-router-dom";
 import Inicio from "./components/pages/Inicio";
 import Productos from "./components/pages/Productos";
-import Carrito from "./carrito/Carrito";
+import Carrito from "./components/pages/Carrito";
 
 function App() {
   return (
