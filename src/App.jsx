@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import Layout from "./components/layouts/Layout";
 import ProductCard from "./components/items/ProductCard"
-import Nosotros from "./components/items/Nosotros";
 import Name from "./components/items/Name";
-import Contacto from "./components/pages/Contacto";
+import Contacto from "./pages/Contacto";
 import { Routes, Route } from "react-router-dom";
-import Inicio from "./components/pages/Inicio";
-import Productos from "./components/pages/Productos";
-import Carrito from "./components/pages/Carrito";
+import Inicio from "./pages/Inicio";
+import Productos from "./components/items/Productos";
+import Carrito from "./pages/Carrito";
 
 function App() {
   return (

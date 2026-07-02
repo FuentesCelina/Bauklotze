@@ -1,4 +1,4 @@
-import styles from "../Styles/Nosotros.module.css";
+import styles from "./Nosotros.module.css";
 import { useState,useEffect } from "react";
 
 function Nosotros() {

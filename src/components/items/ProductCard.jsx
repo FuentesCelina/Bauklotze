@@ -1,4 +1,4 @@
-import styles from "../Styles/Product.module.css";
+import styles from "./Product.module.css";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaCartPlus } from "react-icons/fa";

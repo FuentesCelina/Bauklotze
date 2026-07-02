@@ -1,5 +1,5 @@
-import Nosotros from "../items/Nosotros";
-import styles from "../Styles/Inicio.module.css";
+import Nosotros from "./Nosotros";
+import styles from "./Inicio.module.css";
 import { useState, useEffect } from "react";
 
 function Inicio (){
