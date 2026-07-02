@@ -9,7 +9,6 @@ function ProductCard( {producto}) {
     const [favorito, setFavorito] = useState(false);
     const [carritoActivo, setCarritoActivo] = useState(false);
 
-    const [cantidad, setCantidad] = useState(1);
     const incrementar = () => {
         setCantidad(cantidad + 1);
     };
@@ -18,7 +17,11 @@ function ProductCard( {producto}) {
             setCantidad(cantidad - 1);
         }
     };
-    const { addToCart } = useCart();
+
+    const { addToCart, getCantidadActual } = useCart();
+    const cantidadActual = getCantidadActual(producto.id);
+    const [cantidad, setCantidad] = useState(0);
+
     const handleAddToCart = () => {
         addToCart(producto, cantidad);
         alert(`Agregaste ${cantidad} unidades de ${producto.name} al carrito.`);
@@ -44,7 +47,7 @@ function ProductCard( {producto}) {
                 }`}
             >
                 <button onClick={decrementar}>-</button>
-                <p style={{ margin: '0 10px' }}>{cantidad}</p>
+                <p style={{ margin: '0 10px' }}>{cantidadActual}</p>
                 <button onClick={incrementar}>+</button>
                 <button onClick={() => {handleAddToCart();setCarritoActivo(!carritoActivo);}}>
                 Agregar {cantidad} al carrito

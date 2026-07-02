@@ -24,7 +24,10 @@ export const CartProvider = ({ children }) => {
             setCart(prevCart => [...prevCart, { ...product, quantity }]);
         }
     };
-
+    const getCantidadActual = (productId) => {
+        const item = cart.find(item => item.id === productId);
+        return item ? item.quantity : 0;
+    };
     const clearCart = () => {setCart([]);};
 
     const getCartQuantity = () => {return cart.reduce((acc, item) => acc + item.quantity, 0);};
@@ -32,7 +35,7 @@ export const CartProvider = ({ children }) => {
     const getCartTotal = () => {return cart.reduce((acc, item) => acc + item.price * item.quantity,0);};
 
     return (
-    <CartContext.Provider value={{ cart, addToCart, clearCart,
+    <CartContext.Provider value={{ cart,getCantidadActual, addToCart, clearCart,
         getCartQuantity, getCartTotal }}>
         {children}
     </CartContext.Provider>
