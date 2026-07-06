@@ -3,6 +3,7 @@ import { db } from '../../firebase/config';
 import { FormularioContainer } from '../formulario/FormularioContainer';
 import { FormularioProducto } from '../formulario/FormularioProducto';
 import { collection, getDocs, doc, deleteDoc, updateDoc } from "firebase/firestore";
+import { Link } from 'react-router-dom';
 const Gestion = () => {
     const [productos, setProductos] = useState([]);
     const [productoEditando, setProductoEditando] = useState(null);
