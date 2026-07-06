@@ -43,4 +43,3 @@ function Nosotros() {
 }
 
 export default Nosotros;
-//8618868db34a4515c48be55f2c46de58

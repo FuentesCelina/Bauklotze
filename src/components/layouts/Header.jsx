@@ -11,10 +11,11 @@ return (
       <nav>
         <ul className="menu">
           <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/productos">Productos</Link></li>
           <li><Link to="/contactos">Contacto</Link></li>
           <li><Link to="/carrito">Carrito{totalItems > 0 &&
             <span>{totalItems}</span>}</Link></li>
+          <li><Link to="/productosNacionales">Productos Nacionales</Link></li>
+          <li><Link to="/gestion">Gestion</Link></li>
         </ul>
       </nav>
     </header>

@@ -1,5 +1,5 @@
 import "./Footer.css"
-import Nosotros from "../../pages/Nosotros";
+import Nosotros from "../pages/Nosotros";
 
 function Footer() {
 return (

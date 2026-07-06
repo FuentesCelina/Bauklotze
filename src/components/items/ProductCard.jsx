@@ -29,7 +29,6 @@ function ProductCard( {producto}) {
     
     return (
         <div className={styles["product-card"]}>
-            
             <img src={producto.image} alt={producto.name} className={styles["picture-card"]}/>
             <h2 className={styles["name-card"]}>{producto.name}</h2>
             <p className={styles["precio-card"]}>{producto.price}</p>
@@ -39,8 +38,12 @@ function ProductCard( {producto}) {
                 }`}
                 onClick={() => setFavorito(!favorito)}
             >
+            <span>
+                <Link to={`/productos-nacionales/${producto.id}`}>Ver detalle</Link>
+            </span>
             <FaStar />
             </span>
+            
             <span
                 className={`${styles.carrito} ${
                 carritoActivo ? styles.activo : ""
