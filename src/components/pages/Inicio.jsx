@@ -17,15 +17,6 @@ function Inicio (){
 
         <h2>Gaming · Style · Snk</h2>
       </div>
-      {/*
-      <div className={styles.imageContainer}>
-        <img
-          className={styles.image}
-          src="https://www.pngplay.com/wp-content/uploads/12/Attack-Titan-Eren-Transparent-PNG.png"
-          alt="Eren"
-        />
-      </div>
-      */}
     </section>
     );
 }

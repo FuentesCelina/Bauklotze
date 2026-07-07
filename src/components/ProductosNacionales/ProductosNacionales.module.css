@@ -1,7 +1,29 @@
-.products{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center ;
+  gap: 10px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin: 10px;
+}
+
+.buscador input {
+  width: 700px;
+  max-width: 90%;
+  height: 30px;
+  font-size: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
 }

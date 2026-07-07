@@ -1,3 +1,10 @@
+.carrito-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0f0f0f, #8A0303);
+}
+
 .product-card {
   background: white;
   width: 220px;
@@ -7,12 +14,14 @@
   box-shadow: 0 4px 10px rgba(168, 28, 28, 0.15);
   margin: 10px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding:20px;
+  padding: 20px;
   justify-content: center;
 }
+
 .picture-card {
   width: 100%;
   height: 160px;
@@ -30,4 +39,9 @@
   font-size: 18px;
   font-weight: bold;
   color: hsl(217, 11%, 36%);
+}
+
+.titulo {
+  justify-content: center;
+  text-align: center;
 }

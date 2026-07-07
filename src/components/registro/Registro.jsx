@@ -9,32 +9,20 @@ const Registro = () => {
     const auth = getAuth();
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError(null); // Reseteamos cualquier error previo
+        setError(null);
         try {
-            // Intentamos crear el nuevo usuario en Firebase
             await createUserWithEmailAndPassword(auth, email, password);
-            // Si la creación es exitosa, lo redirigimos al inicio
-            // Firebase ya gestiona el estado de sesión automáticamente
             navigate('/');
         } catch (error) {
-            // Aquí es donde manejamos el caso específico que nos interesa
             if (error.code === 'auth/email-already-in-use') {
-                // Usamos window.confirm para hacer la pregunta al usuario
                 const quiereLoguearse = window.confirm(
                     'Este correo electrónico ya está registrado. ¿Deseaintentar iniciar sesión ? ');
                 if (quiereLoguearse) {
-                    // Si el usuario confirma, lo redirigimos a la página de
-                    login
                     navigate('/login');
                 } else {
-                    // Si el usuario cancela, lo redirigimos a la página de
-                    inicio
                     navigate('/');
                 }
             } else {
-
-                // Para cualquier otro error (contraseña débil, emailinválido, etc.),
-                // mostramos un mensaje genérico.
                 setError('Ocurrió un error al registrar el usuario. Verifiquelos datos e intente nuevamente.');
 console.error("Error en el registro:", error.message);
             }

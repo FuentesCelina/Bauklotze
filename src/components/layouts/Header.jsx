@@ -19,7 +19,7 @@ function Header() {
           <li><Link to="/carrito">Carrito{totalItems > 0 &&
             <span>{totalItems}</span>}</Link></li>
           <li><Link to="/productosNacionales">Productos Nacionales</Link></li>
-          <ul>{/* Lógica de renderizado condicional */}
+          <ul>
             {user ? (
               <>
                 {user.rol === "admin" && (

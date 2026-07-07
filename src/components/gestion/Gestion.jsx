@@ -51,7 +51,7 @@ const Gestion = () => {
             <ul>
                 {productos.map((prod) => (
                     <li key={prod.id}>
-                        {prod.name} - ${prod.price}
+                        {prod.name} - ${prod.price}- ${prod.category}- ${prod.stock} 
                         {
                             <button onClick={() => handleDelete(prod.id)} style={{ marginLeft: '10px' }}>Eliminar</button>
                         }

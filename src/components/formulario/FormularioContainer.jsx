@@ -1,9 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import { FormularioProducto } from "./FormularioProducto";
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc,doc,updateDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 
-export function FormularioContainer({productoEditando}) {
+export function FormularioContainer({productoEditando,setProductos, setProductoEditando}) {
   const [datosForm, setDatosForm] = useState({
     name: '',
     price: '',
@@ -36,18 +36,15 @@ export function FormularioContainer({productoEditando}) {
   const manejarEnvio = async (evento) => {
   evento.preventDefault();
 
-  // Validación de imagen
   if (!imagenFile && !productoEditando) {
     alert("Por favor, selecciona una imagen para el producto.");
     return;
   }
 
   try {
-    let imageUrl = productoEditando?.image || ""; // si estás editando, conserva la imagen actual
-
-    // 👇 solo sube a ImgBB si hay una nueva imagen seleccionada
+    let imageUrl = productoEditando?.image || ""; 
     if (imagenFile) {
-      const apiKey = "4b43a2529a41a25a2e5e790c98fccc7c";
+      const apiKey = import.meta.env.VITE_IMGBB_KEY;
       const formData = new FormData();
       formData.append("image", imagenFile);
 
@@ -68,7 +65,6 @@ export function FormularioContainer({productoEditando}) {
       }
     }
 
-    // Objeto final del producto
     const productoCompleto = {
       name: datosForm.name,
       price: datosForm.price,
@@ -78,7 +74,6 @@ export function FormularioContainer({productoEditando}) {
     };
 
     if (productoEditando) {
-      // 🔁 ACTUALIZAR
       const ref = doc(db, "productos nacionales", productoEditando.id);
       await updateDoc(ref, productoCompleto);
 

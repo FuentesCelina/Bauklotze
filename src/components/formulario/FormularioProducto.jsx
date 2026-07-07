@@ -4,7 +4,6 @@ export function FormularioProducto({ datosForm, manejarCambio, manejarEnvio, man
     return (
         <form className={styles["form-prod"]} onSubmit={manejarEnvio}>
             <h3>Agregar Nuevo Producto</h3>
-            <h1>HOLA MUNDO</h1>
             <div>
                 <label>Nombre del Producto:</label>
                 <input
